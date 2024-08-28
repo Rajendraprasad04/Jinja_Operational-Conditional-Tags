@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Jinja_opetational_tags</title>
+        
+    </head>
+    <body>
+       <!-- # example for if condition in django project
+        <h1>Jinja_Opetational_Tags</h1> 
+        {% if b > a %}
+        <h1>{{ a }} is Greaterthan b </h1>
+        {% endif %}  -->
+        <!--<center>
+<h1>example of if else condition </h1>
+        {% if a > b %}
+        <center>
+            <h1>{{a}} is maximum </h1>
+        </center>
+         {% else %} 
+         <center>
+        <h1>{{b}} is maximum </h1>
+         </center>
+         {% endif %}
+
+        </center>-->
+<!--
+        <center>
+            <h1>Example of if elif  condition</h1>
+            {% if a > b and a > c %}
+            <h1>{{a}} is Greater than  b and c</h1>
+            {% elif b > c %}
+            <h1>{{b}} is Greaterthan a and c</h1>
+            {% else %}
+            <h1>{{c}} is Greaterthan a and b</h1>
+            {% endif %}
+        </center>-->
+        
+        <center>
+            <h1>Example of nested if </h1>
+            {% if a > b %}
+            {% if a > c %}
+            <h1>{{a}} is Greaterthan b and c</h1>
+            {% else %}
+            <h1>{{c}} is Greaterthan a and b</h1>
+            {% endif %}
+            {% else %}
+            {% if b > c %}
+            <h1>{{b}} is Greaterthan a and c</h1>
+            {% else %}
+            <h1>{{c}} is Greaterthan a and b</h1>
+            {% endif %}
+            {% endif %}
+        </center>
+    </body>
+
+</html>
